@@ -1,0 +1,213 @@
+* {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(105, 171, 84);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    background-image: url(../assets/lotto.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #ffee00;
+}
+
+h1 {
+    text-shadow: -4px 3px 4px #00000080;
+    font-size: 48px;
+}
+
+aside.results {
+    background: linear-gradient(45deg, rgba(0, 110, 46, 0) 5%, rgba(0, 110, 46, 1) 45%, rgba(0, 110, 46, 1) 55%, rgba(0, 110, 46, 0) 95%);
+    padding: 5px 0;
+}
+aside.list {
+    position:fixed;
+    top:-100vh;
+    left:0;
+    width:100vw;
+    height:100vh;
+    padding-top:15px;
+    background:#000;
+    transition: transform .3s linear;
+    overflow: hidden;
+}
+aside.list div {
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+}
+aside.list.open {
+    transform:translateY(100vh);
+}
+button {
+    position: relative;
+    display: block;
+    margin: 16px auto 0;
+    background-color: rgba(0, 110, 46, 1);
+    padding: 10px 6px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 240px;
+    box-shadow: 0 0 15px -2px #0f3523;
+    color: gold;
+    border-radius: 25px;
+}
+
+button:active {
+    background: #29654f;
+    outline: none !important;
+    opacity: 1;
+    color: #fff;
+}
+
+button:focus {
+    outline: none !important;
+    opacity: 1;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+#pokaz {
+    position: absolute;
+    top:1%;
+    left:1%;
+}
+section {
+    text-align: center;
+    max-width: 400px;
+    margin: 15px auto 0;
+    background: #ffc4004d;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 0 darkgreen;
+    padding: 8px 0;
+}
+
+.kulki {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: yellow;
+    background: radial-gradient(circle at 35% 30%, white 2%, #fbfb35 17%, #e3e012 40%, rgb(72, 71, 4) 100%);
+    line-height: 43px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+    box-shadow: 7px 21px 15px -21px black;
+    transition: all .66s;
+    margin: 5px
+}
+
+.selected {
+    background: radial-gradient(circle at 35% 30%, #bfc8ef 2%, #5b6eb1 23%, #334c78 40%, rgb(11, 17, 63) 100%);
+    box-shadow: 0px 21px 15px -14px black;
+    color: #ffe100;
+}
+
+.dots::after {
+    content: " .";
+    display: inline-block;
+    text-align: left;
+    width: 30px;
+    padding-left: 8px;
+    animation: dots 1.6s steps(4) infinite;
+}
+
+@keyframes dots {
+
+    0%,
+    100% {
+        content: "";
+    }
+
+    25% {
+        content: ".";
+    }
+
+    50% {
+        content: ". .";
+    }
+
+    75% {
+        content: ". . .";
+    }
+}
+
+@media (max-width:640px) {
+    section {
+        text-align: center;
+        max-width: 500px;
+        margin: 7px auto 0;
+        background: #ffc4004d;
+        border-radius: 40px;
+        box-shadow: 0 0 20px 0 darkgreen;
+        padding: 9px;
+    }
+
+    .kulki {
+        display: inline-block;
+        width: 9.8vw;
+        height: 9.8vw;
+        border-radius: 50%;
+        background-color: yellow;
+        background: radial-gradient(circle at 35% 30%, white 2%, #fbfb35 17%, #e3e012 40%, rgb(72, 71, 4) 100%);
+        line-height: 9.7vw;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        font-size: 1em;
+        box-shadow: 7px 21px 15px -21px black;
+        transition: all .66s;
+        margin: 2px;
+    }
+    button {
+        margin:5px auto;
+        font-size: 1em;
+                width:100%;
+    }
+    .selected {
+        background: radial-gradient(circle at 35% 30%, #bfc8ef 2%, #5b6eb1 23%, #334c78 40%, rgb(11, 17, 63) 100%);
+        box-shadow: 0px 21px 15px -14px black;
+        color: #ffe100;
+    }
+    #pokaz {
+        position: relative;
+        left:0;
+        top:0;
+    }
+    aside.list.open h1{
+        width:100%;
+        font-size: 8vw;
+    }
+}
