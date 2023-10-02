@@ -45,7 +45,7 @@ h1 {
 }
 
 .results {
-  background: linear-gradient(90deg,rgba(0, 0, 0, 0) 2%,#fff11a 45%,#fff11a 55%,rgba(0, 0, 0, 0) 98%);
+  background: linear-gradient(90deg,rgba(0, 0, 0, 0) 2%,#fff01a80 45%,#fff01a80 55%,rgba(0, 0, 0, 0) 98%);
   padding: 0.5vh 0 1vh;
   margin-top: 1.2vh;
   margin-bottom: 1.6vh;
@@ -57,22 +57,16 @@ h1 {
 }
 
 .list {
-  border-style: ridge;
-  background-image: radial-gradient(
-    ellipse at center,
-    #2d4102 2%,
-    rgba(45, 65, 2, 0.712) 50%,
-    rgb(45, 65, 2) 100%
-  );
+  background-image: radial-gradient(ellipse at center,#2d4102 2%,rgba(45, 65, 2, 0.712) 50%,rgb(45, 65, 2) 100%);
   position: absolute;
   top: -100%;
-  left: 0;
-  width: 100%;
+  left: 2%;
+  width: 96%;
   height: 98%;
   padding-top: 1vh;
   transition: transform 0.21s linear;
   overflow: hidden;
-  border-radius: 5vh;
+  border-radius: 3vh;
   background-size: 100% 100%;
   background-position: 0% 0%;
 }
@@ -154,7 +148,7 @@ section {
   color: rgba(0, 0, 0, 0.1);
   text-shadow: -0.1vh -0.1vh 0.1vh #0b135a;
   font-size: 3vh;
-  box-shadow: 1vh 2.2vh 1.4vh -0.2vh rgba(0, 0, 0, 0.7);
+  box-shadow: 1vh 1.2vh 1.4vh -0.2vh rgba(0, 0, 0, 0.7);
   transition: all 0.33s;
   margin: 0.5vh;
 }
