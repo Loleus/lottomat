@@ -110,7 +110,7 @@ const updateInfo = () => {
 const resetBtn = () => {
     listBtn.style.opacity = 1;
     mainBtn.innerText = "Losuj 6 z 49";
-    mainBtn.style.color = "gold";
+    mainBtn.style.color = "#faec29";
     mainBtn.removeEventListener("click", reset)
     mainBtn.addEventListener("click", handleDraw);
     listBtn.addEventListener("click", resultsList, false)
