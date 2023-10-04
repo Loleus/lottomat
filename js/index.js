@@ -27,7 +27,7 @@ const end = () => {
                 item.style.opacity = 0.4;
             }
         }
-    }, 666)
+    }, 333)
 }
 const unselBalls = () => {
     for (const item of balls) {
@@ -50,7 +50,7 @@ const showInTimeout = (newNumber, i) => {
         if (i ===5) {
             return end();
         }
-    }, 666* (i + 1))
+    }, 333* (i + 1))
 }
 const fillArray = () => {
     for (let i = 0; i < 6; i++) {
@@ -64,7 +64,7 @@ const handleDraw = () => {
     listBtn.disabled = true;
     mainBtn.disabled = true;
     if ($samples <= $collect) {
-        mainBtn.innerText = "l o s u j ę"
+        mainBtn.innerText = "losuję"
         mainBtn.classList.add("dots");
         fillArray();
     } else {

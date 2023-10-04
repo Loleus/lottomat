@@ -39,15 +39,19 @@ body {
 }
 
 h1 {
-    text-shadow: 0.5vh 0.5vh 0.7vh rgba(14, 13, 2, 0.63);
-    font-size: 7vh;
-    line-height: 7.1vh;
-    color: #e1d128;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0.5vh 0.5vh 0.7vh rgba(14, 13, 2, 0.63);
+  font-size: 7.5vh;
+  line-height: 7.5vh;
+  color: #e1d128;
+  font-family: Geneva, Verdana, sans-serif;
 }
 
 .results {
-  background: linear-gradient(90deg,rgba(0, 0, 0, 0) 2%,#fff01a40 45%,#fff01a40 55%,rgba(0, 0, 0, 0) 98%);
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 2%,
+      #fff01a40 45%,
+      #fff01a40 55%,
+      rgba(0, 0, 0, 0) 98%);
   padding: 0.5vh 0 1vh;
   margin-top: 2vh;
   margin-bottom: 1.6vh;
@@ -59,17 +63,17 @@ h1 {
 }
 
 .list {
-  background-color: rgba(8, 75, 9, 0.597);
+  background-color: rgba(39, 147, 46, 0.5);
   position: absolute;
   top: -100%;
   left: 2%;
   width: 96%;
-  height: 98%;
+  height: 99%;
   padding-top: 1vh;
   transition: transform 0.21s linear;
   overflow: hidden;
   border-radius: 3vh;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
 }
 
 .list.open {
@@ -92,7 +96,7 @@ h1 {
 }
 
 button {
-    position: relative;
+  position: relative;
   display: block;
   margin: 0 auto 2vh;
   background-color: rgba(39, 147, 46, 0.36);
@@ -136,7 +140,12 @@ section {
   height: 6.3vh;
   border-radius: 50%;
   background-color: black;
-  background: radial-gradient(circle at 35% 30%,#ffffff 4%,#fbfb35 16%,#c4c10c 45%,#3a3800 80%,#000000 98%);
+  background: radial-gradient(circle at 35% 30%,
+      #ffffff 4%,
+      #fbfb35 16%,
+      #c4c10c 45%,
+      #3a3800 80%,
+      #000000 98%);
   line-height: 6vh;
   border-color: black;
   text-align: center;
@@ -145,17 +154,22 @@ section {
   box-shadow: 0.8vh 0.8vh 0.8vh 0vh rgb(0, 0, 0);
   transition: all 0.33s;
   margin: 0.5vh;
-  color:black;
+  color: black;
 }
 
 .selected {
-  background: radial-gradient(circle at 35% 30%,#bfc8ef 4%,#5b6eb1 22%,#344d79 45%,#0b113f 80%,#000000 98%);
+  background: radial-gradient(circle at 35% 30%,
+      #bfc8ef 4%,
+      #5b6eb1 22%,
+      #344d79 45%,
+      #0b113f 80%,
+      #000000 98%);
   box-shadow: 1vh 2.2vh 1.4vh -0.2vh rgba(0, 0, 0, 0.7);
   color: #ffe100;
 }
 
 .dots {
-    background-color: rgba(175, 76, 76, 0.3);
+  background-color: rgba(175, 76, 76, 0.3);
 }
 
 .dots::after {
@@ -168,10 +182,11 @@ section {
 }
 
 #pokaz {
-    font-size: 2.2vh;
+  font-size: 2.2vh;
 }
 
 @keyframes dots {
+
   0%,
   100% {
     content: " ";
