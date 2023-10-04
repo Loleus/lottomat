@@ -23,7 +23,6 @@ body {
   width: 97%;
   min-height: 94vh;
   text-align: center;
-  /* background: #8f9e4a; */
   background-position-x: 0%;
   background-position-y: 0%;
   background-image: none;
@@ -31,19 +30,20 @@ body {
   background-image: url(../assets/lotto.jpg);
   background-position: bottom;
   background-size: cover;
-  background-blend-mode: soft-light;
+  background-blend-mode: luminosity;
   border-radius: 4vh;
   border-style: none;
   margin-top: 3vh;
   padding-top: 14px;
-  background-color: rgba(175, 76, 76, 0.3);
+  background-color: #9e9b4a;
 }
 
 h1 {
-    text-shadow: 0.7vh 0.7vh 0.9vh rgba(14, 13, 2, 0.63);
+    text-shadow: 0.5vh 0.5vh 0.7vh rgba(14, 13, 2, 0.63);
     font-size: 7vh;
     line-height: 7.1vh;
-    color: #ecf316;
+    color: #e1d128;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .results {
@@ -53,9 +53,9 @@ h1 {
   margin-bottom: 1.6vh;
   border-style: none;
   font-size: 2.5vh;
-  color: #657086;
+  color: black;
   font-weight: 400;
-  text-shadow: 1px 1px 0px black;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.141);
 }
 
 .list {
@@ -95,7 +95,7 @@ button {
     position: relative;
   display: block;
   margin: 0 auto 2vh;
-  background-color: rgba(7, 166, 9, 0.36);
+  background-color: rgba(39, 147, 46, 0.36);
   cursor: pointer;
   width: 40vh;
   max-width: 70vw;
@@ -104,14 +104,11 @@ button {
   border-radius: 4vh;
   border-style: none;
   padding: 0.6vh 0 0.96vh;
-  border-style: none;
   font-size: 3vh;
   line-height: 4vh;
   font-weight: 700;
-  filter: blur(54);
-  /* background-color: rgba(175, 76, 76, 0.3); */
   backdrop-filter: blur(7px);
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 button:active {
@@ -139,36 +136,28 @@ section {
   height: 6.3vh;
   border-radius: 50%;
   background-color: black;
-  background: radial-gradient(
-      circle at 35% 30%,#ffffff 4%,#fbfb35 16%,#c4c10c 45%,#3a3800 80%,#000000 98%
-  );
+  background: radial-gradient(circle at 35% 30%,#ffffff 4%,#fbfb35 16%,#c4c10c 45%,#3a3800 80%,#000000 98%);
   line-height: 6vh;
   border-color: black;
   text-align: center;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.1);
-  text-shadow: -0.1vh -0.1vh 0.1vh #0d22d9;;
+  font-weight: 600;
   font-size: 3vh;
-  box-shadow: 1vh 1vh 1vh 0vh rgba(0, 0, 0, 0.75);
+  box-shadow: 0.8vh 0.8vh 0.8vh 0vh rgb(0, 0, 0);
   transition: all 0.33s;
   margin: 0.5vh;
+  color:black;
 }
 
 .selected {
-  background: radial-gradient(
-    circle at 35% 30%,
-    #bfc8ef 4%,
-    #5b6eb1 22%,
-    #344d79 45%,
-    #0b113f 80%,
-    #000000 98%
-  );
+  background: radial-gradient(circle at 35% 30%,#bfc8ef 4%,#5b6eb1 22%,#344d79 45%,#0b113f 80%,#000000 98%);
   box-shadow: 1vh 2.2vh 1.4vh -0.2vh rgba(0, 0, 0, 0.7);
   color: #ffe100;
 }
+
 .dots {
     background-color: rgba(175, 76, 76, 0.3);
 }
+
 .dots::after {
   content: " .";
   display: inline-block;
@@ -177,9 +166,11 @@ section {
   padding-left: 1vh;
   animation: dots 1.6s steps(4) infinite;
 }
+
 #pokaz {
     font-size: 2.2vh;
 }
+
 @keyframes dots {
   0%,
   100% {
