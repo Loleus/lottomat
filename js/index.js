@@ -89,10 +89,12 @@ const resultsList = () => {
             listBtn.innerText = "Zamknij listę"
             mainBtn.disabled = true;
             mainBtn.style.opacity = 0.4;
+            listBtn.style.background = "rgba(175, 76, 76, 0.3)"
         } else {
             listBtn.innerText = "Lista po " + results.length + " losowaniu";
             mainBtn.disabled = false;
             mainBtn.style.opacity = 1;
+            listBtn.style.background = "rgba(77, 107, 164, 0.36)";
         }
     } else {
         listBtn.innerText = "Nie losowałeś!";
@@ -116,8 +118,10 @@ const resetBtn = () => {
     listBtn.addEventListener("click", resultsList, false)
     if (results.length > 0) {
         listBtn.innerText = "Lista po " + results.length + " losowaniu";
+        listBtn.style.background = "rgba(77, 107, 164, 0.36)";
     } else {
         listBtn.innerText = "Lista pusta";
+        listBtn.style.background = "rgba(175, 76, 76, 0.3)";
     }
 }
 const ballGenerator = () => {
